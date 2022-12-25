@@ -1,0 +1,13 @@
+.sign-in-wrapper {
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .btn.submit {
+        background-color: #2B7A0B;
+    }
+}

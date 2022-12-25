@@ -1,0 +1,44 @@
+.header {
+  background-color: rgb(104, 244, 66);
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    padding-left: 25px;
+    width: 130px;
+    display: inline;
+  }
+
+  .options {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+      &:hover {
+        color: #e8f1ff;
+      }
+    }
+
+    .logout {
+      cursor: pointer;
+
+      &:hover {
+        color: #f5b4b4;
+      }
+    }
+
+    .option {
+      padding: 10px 15px;
+    }
+  }
+}

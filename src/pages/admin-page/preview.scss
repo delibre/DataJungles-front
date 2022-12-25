@@ -1,0 +1,35 @@
+.problem-title {
+    font-size: 38px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.preview {
+    font-size: 18px;
+    margin-top: 20px;
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+    max-height: 600px;
+    height: 500px;
+
+    .column-header {
+        font-size: 18px;
+    }
+
+    .row-cell {
+        font-size: 15px;
+    }
+
+    .accept {
+        display: inline;
+        background-color: rgb(66, 133, 244);
+        width: 25px;
+        height: 25px;
+    
+        &:hover {
+            background-color: rgb(50,205,50);
+        }
+    }
+}

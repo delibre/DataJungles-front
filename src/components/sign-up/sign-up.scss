@@ -1,0 +1,27 @@
+.sign-up-wrapper {
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .btn.submit {
+        background-color: #2B7A0B;
+    }
+
+    .spinner-wrapper {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #registration-input-street {
+        grid-column-start: 1;
+        grid-column-end: 3; 
+     }
+ 
+     #registration-input-street > input {
+         width: 95%;
+    }
+}
