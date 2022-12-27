@@ -76,8 +76,8 @@ const SignUp = () => {
                 const {status} = res;
                 if (status === 200) {
                     const messages = [];
-                    messages.push("Udało się, teraz możesz zalogować się i korzystać z serwisu."); 
-                    setModalContent(createModalContent("Użytkownik został zarejestrowany", messages));
+                    messages.push("Success! Now you can log in and use the service."); 
+                    setModalContent(createModalContent("New account was created", messages));
 
                     clearForm();
                     document.getElementById("create-subscriber-form").reset();
@@ -89,13 +89,13 @@ const SignUp = () => {
                             messages.push(res[key]);
                         }
                     }
-                    setModalContent(createModalContent("Błąd", messages));
+                    setModalContent(createModalContent("Error", messages));
 
                     setModalAndLoading(true, true, false, setIsModal, setModalError, setLoading);
                 } else if (status === 500) {
                     const messages = [];
-                    messages.push("Problem z serwerem, proszę spróbować pózniej"); 
-                    setModalContent(createModalContent("Błąd", messages));
+                    messages.push("Server error. Please try again later."); 
+                    setModalContent(createModalContent("Error", messages));
 
                     setModalAndLoading(true, true, false, setIsModal, setModalError, setLoading);
                 }

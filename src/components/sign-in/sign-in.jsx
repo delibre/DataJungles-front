@@ -44,7 +44,7 @@ const SignIn = () => {
             const {status} = res;
             if (status === 401) {
                 const messages = [];
-                messages.push("There is no user in the database, please check your email and password and try again or create a new account"); 
+                messages.push("There is no auch user in the database, try again or create a new account"); 
                 setModalContent(createModalContent("Error", messages));
 
                 setModalAndLoading(true, true, false, setIsModal, setModalError, setLoading);

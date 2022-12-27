@@ -10,12 +10,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
 import { Redirect, useHistory, useParams } from "react-router-dom";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import Preview from "../../components/preview/preview";
 
-import CustomButton from "../../components/button/custom-button";
-import Spinner from "../../components/spinner/Spinner";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
@@ -62,13 +58,9 @@ const updateFile = (
 const PreviewPage = (props) => {
     const { id, access, rootFolderId } = useParams();
     const { user } = useSelector((state) => state);
-    const dispatch = useDispatch();
     const history = useHistory();
 
     const [loading, setLoading] = useState(false);
-    const [isModal, setIsModal] = useState(false);
-    const [modalError, setModalError] = useState(false);
-    const [modalContent, setModalContent] = useState({});
     const [isFileModalOpen, setFileModalOpen] = useState(false);
 
     const [columnNames, setColumnNames] = useState([]);
