@@ -5,7 +5,7 @@ import {useSelector} from 'react-redux';
 import SignUpPage from '../../pages/sign-up-page/sign-up-page';
 import SignInPage from '../../pages/sign-in-page/sign-in-page';
 import AdminPanel from '../../pages/admin-page/admin-page';
-// import HelloPage from '../../pages/hello-page/hello-page';
+import HelloPage from '../../pages/hello-page/hello-page';
 import Page404 from '../../pages/page-404/page-404';
 import Folder from '../../pages/folder/folder';
 import Header from '../header/header';
