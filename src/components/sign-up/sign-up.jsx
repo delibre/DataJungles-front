@@ -21,8 +21,8 @@ const SignUp = () => {
     const [modalError, setModalError] = useState(false);
     const [modalContent, setModalContent] = useState({});
 
-    const [errorUser, setErrorUser] = useState({errorState: false, messagge: " Musi zawierać co najmniej 4 znaków"});
-    const [errorPassword, setErrorPassword] = useState({errorState: false, messagge: " Musi zawierać co najmniej 8 znaków"});
+    const [errorUser, setErrorUser] = useState({errorState: false, messagge: " Must contain at least 4 characters"});
+    const [errorPassword, setErrorPassword] = useState({errorState: false, messagge: " Must contain at least 8 characters"});
 
 
     const eye = <FontAwesomeIcon icon={faEye} />;
